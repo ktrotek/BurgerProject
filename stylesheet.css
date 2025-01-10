@@ -1,0 +1,318 @@
+.main {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landingpage{
+  background-color: rgb(255, 123, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 80vh; 
+  color: black; 
+  text-decoration: none;
+}
+
+div.footer {
+  display: flex;
+  background-color: #252525;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+div.header {
+    display: flex;
+    background-color: rgb(255, 123, 0);
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    height: 15%;
+    z-index: 1000;
+    position: sticky;
+    top: 0; 
+    border-radius: 4px;
+}
+
+div.header2 {
+    display: flex;
+    background-color: rgba(255, 123, 0, 0.338);
+    justify-content: flex-end;
+    align-items: center;
+    height: 7%;
+    position: sticky;
+    z-index: 999;
+    top:50px;
+    border-radius: 4px;
+}
+
+
+.mtext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:150%;
+    color: rgb(0, 0, 0);
+    text-shadow: #fff;
+}
+
+.flex-container {
+    font-size: 180%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    color:white;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.flex-container-items { 
+    gap:20px;
+
+}
+
+.menu-img {
+    width:  400px;
+    height: 300px; 
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+}
+
+.top-img {
+    width:  250px;
+    height: 200px;
+    position: absolute;
+    left: 0%; 
+    margin: 10px;
+}
+
+ul {
+  font-size: 90%; 
+  line-height: 1.5; 
+  text-align: left; 
+  display: block; 
+  margin: 0 auto;
+}
+
+/* The code for the button in the landing page was copied *and* modified from https://uiverse.io/adamgiebl/giant-donkey-36 */
+
+
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; 
+  gap: 1%; 
+  color:black;
+  
+}
+
+.button-landing {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+.button-landing:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.button-landing:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+/* The code for the button in the main page was copied from https://uiverse.io/Gaurav-WebDev/tall-mayfly-60 */
+
+.button-main {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    text-decoration: none; /* Removes underline */
+    color: inherit;        /* Inherits text color from parent element */
+    background: none;  
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #333;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .button:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+
+/* The social media buttons where coppied from https://uiverse.io/david-mohseni/brave-shrimp-86 */ 
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 8%;
+    font-family: "Poppins", sans-serif;
+    justify-content: flex-end;
+
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+
+
+
+/* text animation code copied *and* modified from https://codepen.io/cssanimation/share/zip/ZpdJGO/ */
+
+h4 {
+    font-size: 150%;
+    color: rgb(255, 123, 0);
+    text-align: center;
+    width: 100%;
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 10%;
+ 
+}
+
+
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span {
+    display: inline-block;
+}
+
+.open {
+    width: 200px;
+    margin: 0 auto;
+    overflow: visible;
+    animation-name: open;
+}
+
+@keyframes open {
+    from { width: 0 }
+    to { width: 200px; }
+}
+
+
